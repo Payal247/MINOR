@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/hotel.css">
+    <link rel="icon" type="image/x-icon" href="../images/explore-your-city-favicon-white.png">
+    <script src="https://kit.fontawesome.com/9fd25b2cb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+    <img src="../images/explore-your-city-high-resolution-logo-transparent (2).png">
+    <ul class="navbar-nav">
+        <li class="navbar-item"><a href="afterlogin.html">Home</a></li>
+        <li class="navbar-item"><a href="#">About</a></li>
+        <li class="navbar-item"><a href="#">Services</a></li>
+        <li class="navbar-item"><a href="#">Discover</a></li>
+        <li class="navbar-item"><a href="#">Contact Us</a></li>
+        <button type="button" onclick="document.location='./registration.html'" class="signup-btn">SignUp</button>
+    </ul>
+    </nav>
+    <main>
+    <h1>Libraries of City</h1>
+    <div class="left-panel">
+        <input type="text" id="search" placeholder="Search Hotel by Name">
+        <h3>Filter By</h3>
+        <div class="filter-group">
+            <label for="filter-state">State:</label>
+            <select id="filter-state">
+                <option value="" disabled selected hidden>Select a State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhatisgarh">Chhatisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttrakhand">Uttrakhand</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="Andaman & Nicobar Island">Andaman & Nicobar Island</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Dadra & Nagar Haveli and Daman & Diu">Dadra & Nagar Haveli and Daman & Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Ladakh">Ladakh</option>
+                <option value="Lakshdweep">Lakshdweep</option>
+                <option value="Jammu Kasmir">Jammu Kasmir</option>
+                <option value="Puducherry">Puducherry</option>
+                
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="filter-rating">Rating:</label>
+            <select id="filter-rating">
+                <option value="">All</option>
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="filter-courses">Room:</label>
+            <select id="filter-courses">
+                <option value="All">All</option>
+                <option value="">Accessible Room</option>
+                <option value="">Adjoining Rooms</option>
+                <option value="">Connecting Rooms</option>
+                <option value="">Deluxe Room</option>
+                <option value="">Double Room</option>
+                <option value="">Executive Room</option>
+                <option value="">Family Room</option>
+                <option value="">Junior Suite</option>
+                <option value="">King Room</option>
+                <option value="">Penthouse Suite</option>
+                <option value="">Queen Room</option>
+                <option value="">Single Room</option>
+                <option value="">Standard Room</option>
+                <option value="">Suite</option>
+                <option value="">Twin Room</option>
+            </select>
+        </div>
+        <div class="filter-block">
+            <h3>Price</h3>
+            <div class="fee-range">
+                <label for="min-fee">Minimum:</label>
+                <input type="number" id="min-fee" name="min-fee">
+            </div>
+            <div class="fee-range">
+                <label for="max-fee">Maximum:</label>
+                <input type="number" id="max-fee" name="max-fee">
+            </div>        
+        <h3>Sort by:</h3>
+        <div class="sort-group">
+            <input type="radio" id="sort-name" name="sort" value="name">
+            <label for="sort-name">Name</label>
+        </div>
+        <div class="sort-group">
+            <input type="radio" id="sort-rating" name="sort" value="rating">
+            <label for="sort-rating">Rating</label>
+        </div>
+        <div class="sort-group">
+            <input type="radio" id="sort-fees" name="sort" value="fees">
+            <label for="sort-fees">Price</label>
+        </div>
+        <div class="map-card">
+            <div class="map-field">
+                <button id="open-map">Open Map</button>
+            </div>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </div>
+    </div>   
+</div>
+
+
+
+<div class="right-panel">
+    <div class="university-details">
+        <img src="../images/hotel.jpg" alt="University">
+        <div class="university-info">
+            <h2>Sayaji Hotel</h2>
+            <p>Address:H/1 , Scheme No.54, Vijay Nagar, Indore, Madhya Pradesh - 452010</p>
+            <p>Contact No: 0731 4006666</p>
+            <p>Visiting Hours: 24 Hrs </p>
+            <p>Rating: ★★★★★</p>
+            <a href="https://sayajihotels.com/our-locations/indore/" target="_blank">Official Website</a>
+        </div>
+    </div>
+</div>
+</div>
+    
+</main>
+
+
+    <div class="footer-container" style="margin-top: 20px;">
+        <div class="footer-section">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">FAQs & Help</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><i class="fa fa-envelope me-3"></i>&nbsp&nbsp&nbsp Email: explore.city@gmail.com</li>
+                <li><i class="fa fa-phone me-3"></i>&nbsp&nbsp&nbsp  Phone: +1 (123) 456-7890</li>
+                <li><i class="fa fa-map-marker me-3"></i>&nbsp&nbsp&nbsp  Address: 123 Main Street, City, State, ZIP</li>
+            </ul>
+            <div class="footer-ids">
+                <a class="footer-social" href=""><i class="fab fa-twitter"></i></a>
+                <a class="footer-social" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="footer-social" href=""><i class="fab fa-youtube"></i></a>
+                <a class="footer-social" href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>To get our latest news and updates,</br> please enter your email below.</p>
+            <div class="footer-newsletter" style="max-width: 400px;">
+            <input class="footer-newsletter-input" type="text" placeholder="Your email">
+            <button type="button" class="footer-newsletter-button">Subscribe</button>
+        </div>
+        <div class="footer-section">
+            <div class="copyright">
+            </br>
+                        &copy; <a class="border-bottom" href="#">Explore your City</a>, All Right Reserved.
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                            <a href="">Help</a>
+                            <a href="">FQAs</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
