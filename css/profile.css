@@ -1,0 +1,272 @@
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border-radius: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #444;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding-left: 40px;
+  position: relative;
+}
+
+input[type="text"], input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  outline: none;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container input[type="text"]:focus + label::before,
+.input-container input[type="email"]:focus + label::before {
+  content: "✎";
+  color: #4CAF50;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 20px;
+} */
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  height: 240%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: #c5eef5;
+}
+.hob{
+  width: 1400px; 
+  height: 500px;
+  padding: 500px;
+  margin-top: 200%;
+  padding-bottom: 1000px;
+  max-width: 1271px; 
+  margin: 0 auto; 
+  border-radius: 20px; 
+  background: #fff; 
+  box-shadow: 0px 4px 4px 0 rgba(0,0,0,0.25), 10px 10px 10px 10px rgba(0,0,0,0.25);
+}
+.yash{
+  width: 1252px; 
+  height: 100px; 
+  position: absolute; 
+  left: 200px; 
+  top: 150px; 
+  overflow: hidden;
+}
+.par{
+  position: absolute; 
+  left: 316px; 
+  top: 21px; 
+  font-size: 48px; 
+  font-weight: 600; 
+  text-align: left; 
+  color: rgba(227, 223, 223, 0.89);
+}
+
+.haw{
+  width: 1256px; 
+  height: 763px; 
+  position: absolute; 
+  left: 7px; 
+  top: 109px; 
+  overflow: hidden;
+}
+
+.moj{
+  width: 300px; 
+  height: 180px; 
+  position: absolute; 
+  left: 101px; 
+  top: 46px;
+}
+
+.nug{
+  width: 350px; 
+  height: 187px; 
+  position: absolute; 
+  left: 0px; 
+  top: 0px;
+}
+.pav{
+  position: absolute; 
+  left: 170px; 
+  top: 120px; 
+  font-size: 40px; 
+  font-weight: 900; 
+  text-align: left; 
+  color: rgba(0,0,0,0.33);
+}
+
+.ush{
+  position: absolute; 
+  left: 18px; 
+  top: 0px; 
+  font-size: 32px; 
+  font-weight: 600; 
+  text-align: left; 
+  color: rgba(0,0,0,0.74);
+}
+
+.hgt{
+  width: 451px; 
+  height: 41px; 
+  position: absolute; 
+  left: 18px; 
+  top: 53px; 
+  font-size: 32px; 
+  font-weight: 600; 
+  text-align: left; 
+  color: rgba(0,0,0,0.59);
+}
+
+.rot{
+  width: 350px; 
+  height: 114px; 
+  position: absolute; 
+  left: 102px; 
+  top: 264px;
+}
+
+.bol{
+  width: 500px; 
+  height: 65px; 
+  position: absolute; 
+  left: -1px; 
+  top: 48px; 
+  border-radius: 20px; 
+  background: rgba(217,217,217,0.31)
+}
+
+.joh{
+  width: 457px; 
+  height: 41px; 
+  font-size: 32px; 
+  font-weight: 600; 
+  text-align: left; 
+  color: rgba(0,0,0,0.59);
+}
+
+.bon{
+  width: 300px; 
+  height: 90px; 
+  position: absolute; 
+  left: 812px; 
+  top: 580px;
+}
+
+.bolg{
+  width: 300px; 
+  height: 90px; 
+  position: absolute; 
+  left: -1px; 
+  top: -1px; 
+  border-radius: 30px; 
+  background: rgba(61,183,191,0.88);
+}
+
+.lhu{
+  width: 418px; 
+  height: 402px; 
+  position: absolute; 
+  left: 726px; 
+  top: 63px; 
+  overflow: hidden;
+}
+
+.gvr{
+      width: 300px; 
+      height: 180px; 
+      position: absolute; 
+      left: 101px; 
+      top: 750px;
+}
+
+
+
+ .kjh{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50px;
+  left: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.84);
+  z-index: 36;
+  border-radius: 5px;
+ }
+.hji{
+  flex-shrink: 0;
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 35;
+}
+
+.fou{
+  width: 24px; 
+  height: 24px; 
+  position: absolute; 
+  left:30px; 
+  top: -13px;
+}
