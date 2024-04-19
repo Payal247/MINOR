@@ -24,9 +24,9 @@
     </ul>
     </nav>
     <main>
-    <h1>Local Attractions of City</h1>
+    <h1>Rental Houses of City</h1>
     <div class="left-panel">
-        <input type="text" id="search" placeholder="Search Local Attraction by Name">
+        <input type="text" id="search" placeholder="Search by City Name">
         <h3>Filter By</h3>
         <div class="filter-group">
             <label for="filter-state">State:</label>
@@ -84,21 +84,28 @@
             </select>
         </div>
         <div class="filter-group">
-            <label for="filter-courses">Category:</label>
+            <label for="filter-courses">Property Configuration:</label>
             <select id="filter-courses">
                 <option value="All">All</option>
-                <option value="">Art galleries</option>
-                <option value="">Entertainment venues</option>
-                <option value="">Food and dining experiences</option>
-                <option value="">General Stores</option>
-                <option value="">Historical landmarks</option>
-                <option value="">Medical Stores</option>
-                <option value="">Natural parks</option>
-                <option value="">Outdoor activities </option>
-                <option value="">Stationary</option>
-                <option value="">Shopping areas</option>
+                <option value="">1 BK</option>
+                <option value="">2 BK</option>
+                <option value="">3 BK</option>
+                <option value="">1 BHK</option>
+                <option value="">2 BHK</option>
+                <option value="">3 BHK</option>
+                
             </select>
-        </div>      
+        </div>
+        <div class="filter-block">
+            <h3>Price</h3>
+            <div class="fee-range">
+                <label for="min-fee">Minimum:</label>
+                <input type="number" id="min-fee" name="min-fee">
+            </div>
+            <div class="fee-range">
+                <label for="max-fee">Maximum:</label>
+                <input type="number" id="max-fee" name="max-fee">
+            </div>        
         <h3>Sort by:</h3>
         <div class="sort-group">
             <input type="radio" id="sort-name" name="sort" value="name">
@@ -107,7 +114,15 @@
         <div class="sort-group">
             <input type="radio" id="sort-rating" name="sort" value="rating">
             <label for="sort-rating">Rating</label>
-       </div>
+        </div>
+        <div class="sort-group">
+            <input type="radio" id="sort-fees" name="sort" value="fees">
+            <label for="sort-fees">Low to High Price</label>
+        </div>
+        <div class="sort-group">
+            <input type="radio" id="sort-fees" name="sort" value="fees">
+            <label for="sort-fees">High to Low Price</label>
+        </div>
         <div class="map-card">
             <div class="map-field">
                 <button id="open-map">Open Map</button>
@@ -121,14 +136,14 @@
 
 <div class="right-panel">
     <div class="university-details">
-        <img src="../images/hotel.jpg" alt="University">
+        <img src="../images/university.jpg" alt="University">
         <div class="university-info">
-            <h2>Sayaji Hotel</h2>
-            <p>Address:H/1 , Scheme No.54, Vijay Nagar, Indore, Madhya Pradesh - 452010</p>
-            <p>Contact No: 0731 4006666</p>
-            <p>Visiting Hours: 24 Hrs </p>
-            <p>Rating: ★★★★★</p>
-            <a href="https://sayajihotels.com/our-locations/indore/" target="_blank">Official Website</a>
+            <h2>Indore Institute of Science and Technology</h2>
+            <p>Address: Rau - Pithampur Rd, Opposite Indian Institute of Management, Rau, Indore, Madhya Pradesh 453331</p>
+            <p>Contact No: 1800 103 3069</p>
+            <p>Visiting Hours: 9:00 AM - 5:00 PM</p>
+            <p>Rating: ★★★★☆</p>
+            <a href="https://indoreinstitute.com/" target="_blank">Official Website</a>
         </div>
     </div>
 </div>
